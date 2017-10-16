@@ -5,20 +5,20 @@
 		$(".se-pre-con").fadeOut("slow");;
 	});
 
-$(document).ready(function(){       
+$(document).ready(function(){
    var scroll_start = 0;
    var startchange = $('#profile');
    var offset = startchange.offset();
     if (startchange.length){
-   $(document).scroll(function() { 
+   $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
       if(scroll_start > (offset.top-50)) {
           $(".navbar-fixed-top").css('background-color', '#000');
 		  $(".navbar-fixed-top").css('opacity','0.9');
 		  $('.navbar-header *').css('color','#fff');
 		  $('.dropdown-menu').css('background-color','#000');
-		  
-       } else { 
+
+       } else {
           $('.navbar-fixed-top').css('background-color', 'transparent');
 		  $('.navbar-header *').css('color','#000');
 		  $('.dropdown-menu').css('background-color','#fff');
@@ -51,8 +51,4 @@ $(document).ready(function(){
 				});
 		}
 	})
-});
-$(document).ready(function(){
-	var y=new Date().getFullYear();
-	document.getElementById("years").innerHTML = y-1993;
 });
